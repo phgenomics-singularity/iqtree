@@ -7,10 +7,10 @@ A Singularity image for Snippy
 %labels
 Maintainer Kristy Horan
 Build 1.0
-iqtree_version 4.3.6
+iqtree_version 1.6.12
 
 %environment
-export VERSION=4.3.6
+export VERSION=1.6.12
 export PATH=/opt/conda/bin:$PATH
 
 %post
@@ -25,7 +25,7 @@ conda config --add channels defaults
 conda config --add channels r
 conda config --add channels bioconda
 
-conda install -c conda-forge -c bioconda iqtree=4.3.6
+conda install -c conda-forge -c bioconda iqtree=1.6.12
 
 export LANGUAGE=en_US.UTF-8
 export LANG=en_US.UTF-8
